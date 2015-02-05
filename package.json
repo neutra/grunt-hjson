@@ -34,7 +34,7 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "hjson": "*",
+    "hjson": "~1.6.1",
     "chalk": "~0.5.1"
   }
 }
