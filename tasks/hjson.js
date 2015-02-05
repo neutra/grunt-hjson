@@ -5,12 +5,15 @@
  * Copyright (c) 2015 Neutra
  * Licensed under the MIT license.
  */
+
+'use strict';
+
+var path = require('path');
+var chalk = require('chalk');
 var hjson = require('hjson');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('hjson', 'convert hjson to json', function() {
-    var path = require('path');
-    var chalk = require('chalk');
     this.files.forEach(function(f){
       f.src.filter(function(filepath) {
         if (!grunt.file.exists(filepath)) {

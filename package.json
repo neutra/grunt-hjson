@@ -1,7 +1,7 @@
 {
   "name": "grunt-hjson",
-  "version": "1.0.0",
   "description": "convert hjson to json",
+  "version": "1.0.0",
   "homepage": "https://github.com/neutra/grunt-hjson",
   "author": {
     "name": "Neutra",
@@ -20,21 +20,22 @@
       "url": "https://github.com/neutra/grunt-hjson/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "grunt.js",
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.4.0"
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
   },
   "keywords": [
     "gruntplugin"
-  ],
-  "dependencies": {
-    "hjson": "~1.6.1",
-    "chalk": "~0.5.1"
-  }
+  ]
 }
